@@ -36,14 +36,10 @@ export default function Hero() {
       {/* Stats Section */}
       <div className="mt-12 sm:mt-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-16 text-center">
             <div className="transform hover:scale-105 transition-all duration-300">
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary mb-2 animate-bounce">100+</div>
               <div className="text-purple-100 text-sm sm:text-base font-medium">Students Taught</div>
-            </div>
-            <div className="transform hover:scale-105 transition-all duration-300">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary mb-2 animate-bounce">2</div>
-              <div className="text-purple-100 text-sm sm:text-base font-medium">Expert Tutors</div>
             </div>
             <div className="transform hover:scale-105 transition-all duration-300">
               <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary mb-2 animate-bounce">95%</div>
