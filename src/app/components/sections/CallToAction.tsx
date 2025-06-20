@@ -27,7 +27,7 @@ export default function CallToAction() {
         </h2>
         
         <p className="text-lg sm:text-xl mb-12 text-purple-100 leading-relaxed max-w-4xl mx-auto">
-          Join students in Roorkee who have achieved excellent results with our expert tutors Aradhana Rawat and Anusriya Tyagi. 
+          Join students who have achieved excellent results with our expert tutors. 
           Book your free trial class today and experience the difference personalized learning can make.
         </p>
         
@@ -44,7 +44,7 @@ export default function CallToAction() {
             variant="secondary" 
             className="border-white text-white hover:bg-white hover:text-primary hover:scale-105 transform transition-all duration-300 text-lg px-8 py-4"
           >
-            Call +91 98765 43210
+            Call +91 925 984 4072
           </Button>
         </div>
 

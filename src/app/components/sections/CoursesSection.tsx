@@ -6,7 +6,7 @@ export default function CoursesSection() {
     {
       title: 'Chemistry',
       description: 'Master Chemistry concepts with comprehensive practical learning. From molecular structure to advanced reactions, build a strong foundation with hands-on laboratory experience.',
-      tutor: 'Aradhana Rawat',
+      tutor: 'Chemistry Expert',
       icon: '🧪',
       gradient: 'from-emerald-400 to-cyan-400',
       levels: ['AS & A-level (CIE, Edexcel, AQA)', '11th & 12th CBSE', '10th Grade CBSE'],
@@ -15,7 +15,7 @@ export default function CoursesSection() {
     {
       title: 'Physics',
       description: 'Explore the fundamental laws of the universe with expert guidance. Build conceptual clarity in mechanics, electricity, magnetism, and modern physics through problem-solving.',
-      tutor: 'Anusriya Tyagi',
+      tutor: 'Physics Expert',
       icon: '⚛️',
       gradient: 'from-blue-400 to-purple-500',
       levels: ['AS & A-level (CIE, Edexcel, AQA)', '11th & 12th CBSE', 'O-level IGCSE'],
@@ -24,7 +24,7 @@ export default function CoursesSection() {
     {
       title: 'Mathematics',
       description: 'Develop strong mathematical foundations and problem-solving skills. From algebra to calculus, master the language of science with step-by-step guidance.',
-      tutor: 'Aradhana Rawat',
+      tutor: 'Mathematics Expert',
       icon: '📐',
       gradient: 'from-orange-400 to-pink-400',
       levels: ['O-level IGCSE', 'CBSE till 10th Grade', 'Foundation Mathematics'],
@@ -55,9 +55,9 @@ export default function CoursesSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mb-16 sm:mb-20">
           {courses.map((course, index) => (
-            <div key={index} className="group relative">
+            <div key={index} className="group relative h-full">
               <div className="absolute inset-0 bg-gradient-to-r ${course.gradient} rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
-              <div className="relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-neutral-100">
+              <div className="relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-neutral-100 h-full flex flex-col">
                 <div className="text-center mb-6">
                   <div className="text-4xl mb-4">{course.icon}</div>
                   <h3 className="text-2xl font-bold text-neutral-900 mb-2 group-hover:text-primary transition-colors duration-300">
@@ -66,12 +66,11 @@ export default function CoursesSection() {
                   <div className="w-16 h-1 bg-gradient-to-r ${course.gradient} mx-auto rounded-full"></div>
                 </div>
                 
-                <p className="text-neutral-600 mb-6 leading-relaxed text-center">
+                <p className="text-neutral-600 mb-6 leading-relaxed text-center flex-grow-0">
                   {course.description}
                 </p>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-neutral-800 mb-3 text-center">Expert Tutor</h4>
                   <div className="text-center">
                     <span className="inline-block bg-gradient-to-r from-primary to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
                       {course.tutor}
@@ -79,18 +78,16 @@ export default function CoursesSection() {
                   </div>
                 </div>
                 
-                <div className="mb-6">
+                <div className="mb-6 flex-grow">
                   <h4 className="font-semibold text-neutral-800 mb-3">Curriculum Coverage</h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {course.levels.map((level, levelIndex) => (
                       <span key={levelIndex} className="text-xs bg-purple-50 text-primary px-3 py-2 rounded-full border border-purple-200 transition-all duration-300 hover:bg-primary hover:text-white hover:scale-105">
                         {level}
                       </span>
                     ))}
                   </div>
-                </div>
 
-                <div className="mb-8">
                   <h4 className="font-semibold text-neutral-800 mb-4">Key Focus Areas</h4>
                   <div className="grid grid-cols-2 gap-3">
                     {course.features.map((feature, featureIndex) => (
@@ -102,7 +99,7 @@ export default function CoursesSection() {
                   </div>
                 </div>
 
-                <div className="border-t border-neutral-200 pt-6">
+                <div className="border-t border-neutral-200 pt-6 mt-auto">
                   <Button 
                     href="/contact" 
                     variant="primary" 

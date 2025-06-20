@@ -44,7 +44,7 @@ export default function ContactPage() {
         </svg>
       ),
       title: 'Visit Us',
-      details: ['Civil Lines, Roorkee', 'Uttarakhand 247667, India'],
+      details: ['Online'],
       action: 'Get Directions'
     },
     {
@@ -54,7 +54,7 @@ export default function ContactPage() {
         </svg>
       ),
       title: 'Call Us',
-      details: ['Main: +91 98765 43210', 'WhatsApp: +91 98765 43211'],
+      details: ['Main: +91 925 984 4072', 'WhatsApp: +91 925 984 4072'],
       action: 'Call Now'
     },
     {
@@ -265,23 +265,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-neutral-900 mb-3">Address</h3>
                   <p className="text-neutral-700">
-                    Excellence Tuition Center<br />
-                    Civil Lines, Roorkee<br />
-                    Uttarakhand 247667, India<br />
-                    Near IIT Roorkee Main Gate
+                   Online
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">Transportation</h3>
-                  <ul className="text-neutral-700 space-y-2">
-                    <li>• Auto-rickshaw available from Roorkee Railway Station</li>
-                    <li>• City bus routes to Civil Lines</li>
-                    <li>• Walking distance from IIT Roorkee campus</li>
-                    <li>• Free parking available on-site</li>
-                    <li>• Two-wheeler parking facilities</li>
-                  </ul>
-                </div>
+               
 
                 <div>
                   <h3 className="text-lg font-semibold text-neutral-900 mb-3">Facilities</h3>

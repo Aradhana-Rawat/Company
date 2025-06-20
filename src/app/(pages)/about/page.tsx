@@ -59,7 +59,7 @@ export default function AboutPage() {
             <span className="block text-secondary">Science & Mathematics</span>
           </h1>
           <p className="text-xl sm:text-2xl text-purple-100 max-w-4xl mx-auto leading-relaxed">
-            Dedicated to inspiring academic success through expert tutoring, practical learning, and personalized attention in Roorkee since our establishment.
+            Dedicated to inspiring academic success through expert tutoring, practical learning, and personalized attention since our establishment.
           </p>
         </div>
       </section>

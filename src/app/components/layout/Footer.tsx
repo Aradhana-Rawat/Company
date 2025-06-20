@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">Excellence Tuition Center</h3>
             <p className="text-neutral-300 mb-6 leading-relaxed">
-              Empowering students in Roorkee to achieve academic excellence through personalized tutoring and expert guidance. 
+              Empowering students to achieve academic excellence through personalized tutoring and expert guidance. 
               Your success is our mission.
             </p>
             <div className="flex space-x-4">
@@ -61,15 +61,14 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <div>
-                  <p>Civil Lines, Roorkee</p>
-                  <p>Uttarakhand 247667, India</p>
+                  <p>Online</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
                 <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <p>+91 98765 43210</p>
+                <p>+91 925 984 4072</p>
               </div>
               <div className="flex items-center space-x-2">
                 <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

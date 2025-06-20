@@ -12,7 +12,7 @@ export default function Hero() {
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-8 text-purple-100 max-w-4xl mx-auto leading-relaxed">
             Expert Chemistry, Physics & Mathematics tutoring by qualified teachers. 
-            Specializing in CBSE, AS & A-Level, and IGCSE curricula in Roorkee.
+            Specializing in CBSE, AS & A-Level, and IGCSE curricula.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12">
             <Button 
@@ -25,7 +25,7 @@ export default function Hero() {
             <Button 
               href="/tutors" 
               variant="secondary" 
-              className="border-white text-white hover:bg-white hover:text-purple-600 hover:scale-105 transform transition-all duration-300"
+              className="border-white text-white  hover:text-purple-600 hover:scale-105 transform transition-all duration-300"
             >
               Meet Our Tutors
             </Button>

@@ -8,7 +8,7 @@ export default function CoursesPage() {
     {
       title: 'Chemistry',
       description: 'Master the molecular world with comprehensive Chemistry education. From basic atomic structure to advanced organic reactions, develop a deep understanding through practical laboratory work and theoretical excellence.',
-      tutor: 'Aradhana Rawat',
+      tutor: 'Chemistry Specialist',
       tutorQualification: 'MSc Chemistry, BSc Mathematics',
       icon: '🧪',
       gradient: 'from-emerald-400 via-teal-500 to-cyan-600',
@@ -44,7 +44,7 @@ export default function CoursesPage() {
     {
       title: 'Physics',
       description: 'Explore the fundamental laws that govern our universe. From classical mechanics to modern physics, build conceptual clarity and mathematical problem-solving skills through expert guidance.',
-      tutor: 'Anusriya Tyagi',
+      tutor: 'Physics Specialist',
       tutorQualification: 'MSc Physics, BSc Physics',
       icon: '⚛️',
       gradient: 'from-blue-400 via-indigo-500 to-purple-600',
@@ -80,7 +80,7 @@ export default function CoursesPage() {
     {
       title: 'Mathematics',
       description: 'Build strong mathematical foundations from arithmetic to advanced calculus. Develop logical thinking, problem-solving skills, and mathematical intuition that forms the backbone of all sciences.',
-      tutor: 'Aradhana Rawat',
+      tutor: 'Mathematics Specialist',
       tutorQualification: 'MSc Chemistry, BSc Mathematics',
       icon: '📐',
       gradient: 'from-orange-400 via-pink-500 to-red-500',
@@ -283,7 +283,7 @@ export default function CoursesPage() {
               Book Free Trial Class
             </Button>
             <Button href="tel:+919876543210" variant="secondary" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
-              Call +91 98765 43210
+              Call  +91 925 984 4072
             </Button>
           </div>
         </div>

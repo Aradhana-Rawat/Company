@@ -6,12 +6,11 @@ import Button from '../../components/ui/Button';
 export default function TutorsPage() {
   const tutors = [
     {
-      name: 'Aradhana Rawat',
-      role: 'Chemistry & Mathematics Specialist',
+      name: 'Chemistry & Mathematics Specialist',
       subjects: ['Chemistry', 'Mathematics', 'Integrated Science'],
       experience: '8+ years',
       education: 'MSc Chemistry, BSc Mathematics',
-      description: 'Aradhana specializes in making Chemistry and Mathematics concepts accessible through practical learning approaches. Her expertise spans multiple curricula including CBSE, AS & A-Level, and IGCSE systems.',
+      description: 'Our Chemistry and Mathematics specialist focuses on making complex concepts accessible through practical learning approaches. Their expertise spans multiple curricula including CBSE, AS & A-Level, and IGCSE systems.',
       specializations: [
         'AS & A-level Chemistry (CIE, Edexcel, AQA)',
         '11th & 12th CBSE Chemistry',
@@ -28,12 +27,11 @@ export default function TutorsPage() {
       image: '/images/placeholder.svg'
     },
     {
-      name: 'Anusriya Tyagi',
-      role: 'Physics Specialist',
+      name: 'Physics Specialist',
       subjects: ['Physics', 'Advanced Physics'],
       experience: '6+ years',
       education: 'MSc Physics, BSc Physics',
-      description: 'Anusriya is passionate about Physics education and excels in building strong conceptual understanding. Her expertise covers multiple international and national curricula with proven results.',
+      description: 'Our Physics specialist is passionate about Physics education and excels in building strong conceptual understanding. Their expertise covers multiple international and national curricula with proven results.',
       specializations: [
         'AS & A-level Physics (CIE, Edexcel, AQA)',
         '11th & 12th CBSE Physics',
@@ -83,7 +81,7 @@ export default function TutorsPage() {
                     {tutor.name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <h2 className="text-2xl font-bold text-neutral-900 mb-2 group-hover:text-primary transition-colors duration-300">{tutor.name}</h2>
-                  <p className="text-primary font-semibold mb-2">{tutor.role}</p>
+                
                   <p className="text-neutral-600 mb-4">{tutor.education}</p>
                   
                   {/* Experience Badge */}
@@ -144,7 +142,7 @@ export default function TutorsPage() {
                     fullWidth
                     className="hover:scale-105 transform transition-all duration-300"
                   >
-                    Book Session with {tutor.name.split(' ')[0]}
+                    Book Session with Expert
                   </Button>
                 </div>
               </div>
