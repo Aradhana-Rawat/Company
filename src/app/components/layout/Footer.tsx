@@ -74,7 +74,7 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <p>info@excellencetuition.in</p>
+                <p>ExcellenceTuitionOnline@gmail.com</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Footer() {
         <div className="border-t border-neutral-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-neutral-400 text-sm text-center sm:text-left">
-              © {currentYear} Excellence Tuition Center, Roorkee. All rights reserved.
+              © {currentYear} Excellence Tuition Center, All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-neutral-400 hover:text-primary transition-colors duration-300">Privacy Policy</a>

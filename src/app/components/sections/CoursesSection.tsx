@@ -86,7 +86,7 @@ export default function CoursesSection() {
                         {level}
                       </span>
                     ))}
-                  </div>
+                </div>
 
                   <h4 className="font-semibold text-neutral-800 mb-4">Key Focus Areas</h4>
                   <div className="grid grid-cols-2 gap-3">

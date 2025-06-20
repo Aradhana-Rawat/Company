@@ -64,7 +64,7 @@ export default function ContactPage() {
         </svg>
       ),
       title: 'Email Us',
-      details: ['info@excellencetuition.in', 'admissions@excellencetuition.in'],
+      details: ['ExcellencetuitionOnline@gmail.com'],
       action: 'Send Email'
     },
     {
@@ -125,21 +125,25 @@ export default function ContactPage() {
       {/* Contact Info Cards */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {contactInfo.map((info, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 card-shadow text-center">
-                <div className="text-primary mb-4 flex justify-center">
-                  {info.icon}
+              <div key={index} className="bg-white rounded-lg p-6 card-shadow text-center min-h-[200px] flex flex-col justify-between">
+                <div>
+                  <div className="text-primary mb-4 flex justify-center">
+                    {info.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">{info.title}</h3>
+                  <div className="space-y-1 mb-4">
+                    {info.details.map((detail, detailIndex) => (
+                      <p key={detailIndex} className="text-neutral-600 text-sm break-words break-all">{detail}</p>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-3">{info.title}</h3>
-                <div className="space-y-1 mb-4">
-                  {info.details.map((detail, detailIndex) => (
-                    <p key={detailIndex} className="text-neutral-600">{detail}</p>
-                  ))}
+                <div className="mt-auto">
+                  <Button variant="secondary" className="text-sm py-2 px-4">
+                    {info.action}
+                  </Button>
                 </div>
-                <Button variant="secondary" className="text-sm py-2 px-4">
-                  {info.action}
-                </Button>
               </div>
             ))}
           </div>
@@ -148,11 +152,14 @@ export default function ContactPage() {
 
       {/* Contact Form & Map */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
             {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-6">Send Us a Message</h2>
+            <div className="w-full max-w-2xl">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-neutral-900 mb-4">Send Us a Message</h2>
+                <p className="text-neutral-600">Get in touch with us and we'll respond as soon as possible.</p>
+              </div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -166,7 +173,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white text-neutral-900 placeholder-neutral-400"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -181,7 +188,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white text-neutral-900 placeholder-neutral-400"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -198,7 +205,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white text-neutral-900 placeholder-neutral-400"
                       placeholder="Enter your phone number"
                     />
                   </div>
@@ -212,9 +219,9 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white text-neutral-900"
                     >
-                      <option value="">Select a subject</option>
+                      <option value="" className="text-neutral-400">Select a subject</option>
                       <option value="general">General Inquiry</option>
                       <option value="enrollment">Course Enrollment</option>
                       <option value="tutoring">Private Tutoring</option>
@@ -235,7 +242,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white text-neutral-900 placeholder-neutral-400 resize-none"
                     placeholder="Tell us about your needs, questions, or how we can help..."
                   />
                 </div>
@@ -244,44 +251,6 @@ export default function ContactPage() {
                   Send Message
                 </Button>
               </form>
-            </div>
-
-            {/* Map/Location Info */}
-            <div>
-              <h2 className="text-3xl font-bold text-neutral-900 mb-6">Visit Our Center</h2>
-              
-              {/* Placeholder Map */}
-              <div className="bg-neutral-200 rounded-lg h-64 flex items-center justify-center mb-6">
-                <div className="text-center">
-                  <svg className="w-16 h-16 text-neutral-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <p className="text-neutral-600">Interactive Map Coming Soon</p>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">Address</h3>
-                  <p className="text-neutral-700">
-                   Online
-                  </p>
-                </div>
-
-               
-
-                <div>
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-3">Facilities</h3>
-                  <ul className="text-neutral-700 space-y-2">
-                    <li>• Modern air-conditioned classrooms</li>
-                    <li>• Computer laboratory</li>
-                    <li>• Science laboratory</li>
-                    <li>• Student lounge and study area</li>
-                    <li>• Wheelchair accessible</li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -328,9 +297,7 @@ export default function ContactPage() {
             <Button variant="secondary" className="bg-white text-primary hover:bg-neutral-100">
               Book Free Consultation
             </Button>
-            <Button variant="secondary" className="border-white text-white hover:bg-white hover:text-primary">
-              Schedule a Visit
-            </Button>
+           
           </div>
         </div>
       </section>

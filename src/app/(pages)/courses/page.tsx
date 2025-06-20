@@ -140,7 +140,7 @@ export default function CoursesPage() {
             <Button href="/contact" variant="primary" className="text-lg px-8 py-4">
               Book Free Trial Class
             </Button>
-            <Button href="/tutors" variant="secondary" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+            <Button href="/tutors" variant="secondary" className="text-lg px-8 py-4 border-white text-white  hover:text-primary">
               Meet Our Expert Tutors
             </Button>
           </div>
@@ -282,7 +282,7 @@ export default function CoursesPage() {
             <Button href="/contact" variant="secondary" className="bg-white text-primary hover:bg-neutral-100 text-lg px-8 py-4">
               Book Free Trial Class
             </Button>
-            <Button href="tel:+919876543210" variant="secondary" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+            <Button href="tel:+919876543210" variant="secondary" className="border-white text-white hover:text-primary text-lg px-8 py-4">
               Call  +91 925 984 4072
             </Button>
           </div>

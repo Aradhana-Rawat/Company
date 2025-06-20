@@ -140,44 +140,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-20 bg-white relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-secondary/5"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
-              Meet Our Experts
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Expert Tutors
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">Dedicated to Your Success</span>
-            </h2>
-            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Our experienced educators bring passion, expertise, and proven track records in Chemistry, Physics, and Mathematics.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 justify-center max-w-4xl mx-auto">
-            {team.map((member, index) => (
-              <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-600/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-300"></div>
-                <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-neutral-200 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="w-24 h-24 bg-gradient-to-r from-primary to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
-                  <h3 className="text-2xl font-bold text-neutral-900 mb-2 group-hover:text-primary transition-colors duration-300">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2">{member.role}</p>
-                  <div className="inline-block bg-secondary text-neutral-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                    {member.experience} Experience
-                  </div>
-                  <p className="text-neutral-700 leading-relaxed">{member.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-br from-primary via-indigo-500 to-purple-600 text-white relative overflow-hidden">
