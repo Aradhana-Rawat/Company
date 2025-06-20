@@ -158,7 +158,7 @@ export default function ContactPage() {
             <div className="w-full max-w-2xl">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-neutral-900 mb-4">Send Us a Message</h2>
-                <p className="text-neutral-600">Get in touch with us and we'll respond as soon as possible.</p>
+                <p className="text-neutral-600">Get in touch with us and we&apos;ll respond as soon as possible.</p>
               </div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

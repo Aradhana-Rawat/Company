@@ -4,23 +4,6 @@ import Footer from '../../components/layout/Footer';
 import Button from '../../components/ui/Button';
 
 export default function AboutPage() {
-  const team = [
-    {
-      name: 'Aradhana Rawat',
-      role: 'Chemistry & Mathematics Specialist',
-      experience: '8+ years',
-      description: 'MSc Chemistry, BSc Mathematics. Expert in practical learning and problem-solving approaches.',
-      image: '/images/placeholder.svg'
-    },
-    {
-      name: 'Anusriya Tyagi',
-      role: 'Physics Specialist',
-      experience: '6+ years',
-      description: 'MSc Physics, BSc Physics. Passionate about conceptual understanding and exam preparation.',
-      image: '/images/placeholder.svg'
-    }
-  ];
-
   const values = [
     {
       title: 'Excellence',
